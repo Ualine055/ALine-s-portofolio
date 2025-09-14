@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aline's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bg-color':'#1e1e1e',
+                        'main-gold':'#FFD700',
+                        'medium-gold':'#1e1e1e',
+                    },
+                    fontFamily: {
+                        'poppins': ['poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+      @keyframes fall {
+        100% {
+          transform: translateY(100vh);
+        }
+      }
+
+      .animate-fall-slow {
+        animation: fall 45s infinite linear;
+      }
+
+      .animate-fall-fast {
+        animation: fall 22.5s infinite linear;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #1e1e1e;
+        color: #fff;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header
+      class="fixed top-0 left-0 w-full bg-bg-dark/90 backdrop-blur-md z-50 shadow-lg"
+      style="box-shadow: 0px 0px 5px 0px #ffd700" >
+      <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          
+          <a href="#" class="flex items-center">
+            <img src="/assets/img/logo.png" alt="Logo" class="h-8 w-auto" />
+          </a>
+
+          
+          <div class="hidden md:block">
+            <ul class="flex space-x-8">
+              <li>
+                <a
+                  href="#home"
+                  class="text-main-gold hover:text-white transition-colors duration-200 font-semibold"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-white hover:text-main-gold transition-colors duration-200 font-semibold"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#skills"
+                  class="text-white hover:text-main-gold transition-colors duration-200 font-semibold"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#work"
+                  class="text-white hover:text-main-gold transition-colors duration-200 font-semibold"
+                  >Work</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-white hover:text-main-gold transition-colors duration-200 font-semibold"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          
+          <div class="md:hidden">
+            <button
+              id="nav-toggle"
+              class="text-white hover:text-main-gold focus:outline-none"
+            >
+              <i class="bx bx-menu text-2xl"></i>
+            </button>
+          </div>
+        </div>
+
+        
+        <div id="nav-menu" class="md:hidden hidden">
+          <div
+            class="px-2 pt-2 pb-3 space-y-1 bg-medium-dark border-t border-main-gold"
+          >
+            <a
+              href="#home"
+              class="block px-3 py-2 text-main-gold hover:text-white hover:bg-bg-dark rounded-md"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="block px-3 py-2 text-white hover:text-main-gold hover:bg-bg-dark rounded-md"
+              >About</a
+            >
+            <a
+              href="#skills"
+              class="block px-3 py-2 text-white hover:text-main-gold hover:bg-bg-dark rounded-md"
+              >Skills</a
+            >
+            <a
+              href="#work"
+              class="block px-3 py-2 text-white hover:text-main-gold hover:bg-bg-dark rounded-md"
+              >Work</a
+            >
+            <a
+              href="#contact"
+              class="block px-3 py-2 text-white hover:text-main-gold hover:bg-bg-dark rounded-md"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="pt-16">
+
+    </main>
+</body>
+</html>
