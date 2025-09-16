@@ -21,4 +21,14 @@
 
 
 ---
-
+## Deployment
+deployed link
+[
+    https://ualine055.github.io/ALine-s-portofolio/
+    
+]
+## how to run locally
+clone the repository:
+[
+git clone https://github.com/Ualine055/ALine-s-portofolio.git
+]
