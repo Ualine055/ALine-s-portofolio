@@ -39,7 +39,43 @@
       body {
         font-family: "Poppins", sans-serif;
         background-color: #1e1e1e;
-        color: #2b0f0f;
+        color: #ffffff;
+      }
+
+      .snow {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      .snow svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      #snow-top-layer {
+        animation: fall 22.5s infinite linear;
+      }
+
+      #snow-bottom-layer {
+        animation: fall 45s infinite linear;
+      }
+
+      .typed-cursor {
+        display: inline-block;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
     </style>
 
@@ -47,19 +83,91 @@
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <!-- <div class="snow">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 568">
+            <g fill="#FFD700" fill-opacity=".15" transform="translate(55 42)">
+               <g id="snow-bottom-layer">
+                  <ellipse cx="6" cy="1009.5" rx="15" ry="15"/>
+                  <ellipse cx="138" cy="1110.5" rx="15" ry="15"/>
+                  <ellipse cx="398" cy="1055.5" rx="15" ry="15"/>
+                  <ellipse cx="719" cy="1284.5" rx="15" ry="15"/>
+                  <ellipse cx="760" cy="1155.5" rx="15" ry="15"/>
+                  <ellipse cx="635" cy="1459.5" rx="15" ry="15"/>
+                  <ellipse cx="478" cy="1335.5" rx="15" ry="15"/>
+                  <ellipse cx="322" cy="1414.5" rx="15" ry="15"/>
+                  <ellipse cx="247" cy="1234.5" rx="15" ry="15"/>
+                  <ellipse cx="154" cy="1425.5" rx="15" ry="15"/>
+                  <ellipse cx="731" cy="773.5" rx="15" ry="15"/>
+                  <ellipse cx="599" cy="874.5" rx="15" ry="15"/>
+                  <ellipse cx="339" cy="819.5" rx="15" ry="15"/>
+                  <ellipse cx="239" cy="1004.5" rx="15" ry="15"/>
+                  <ellipse cx="113" cy="863.5" rx="15" ry="15"/>
+                  <ellipse cx="102" cy="1223.5" rx="15" ry="15"/>
+                  <ellipse cx="395" cy="1155.5" rx="15" ry="15"/>
+                  <ellipse cx="826" cy="943.5" rx="15" ry="15"/>
+                  <ellipse cx="626" cy="1054.5" rx="15" ry="15"/>
+                  <ellipse cx="887" cy="1366.5" rx="15" ry="15"/>
+                  <ellipse cx="6" cy="241.5" rx="15" ry="15"/>
+                  <ellipse cx="138" cy="342.5" rx="15" ry="15"/>
+                  <ellipse cx="398" cy="287.5" rx="15" ry="15"/>
+                  <ellipse cx="719" cy="516.5" rx="15" ry="15"/>
+                  <ellipse cx="760" cy="387.5" rx="15" ry="15"/>
+                  <ellipse cx="635" cy="691.5" rx="15" ry="15"/>
+                  <ellipse cx="478" cy="567.5" rx="15" ry="15"/>
+                  <ellipse cx="322" cy="646.5" rx="15" ry="15"/>
+                  <ellipse cx="247" cy="466.5" rx="15" ry="15"/>
+                  <ellipse cx="154" cy="657.5" rx="15" ry="15"/>
+                  <ellipse cx="731" cy="5.5" rx="15" ry="15"/>
+                  <ellipse cx="599" cy="106.5" rx="15" ry="15"/>
+                  <ellipse cx="339" cy="51.5" rx="15" ry="15"/>
+                  <ellipse cx="239" cy="236.5" rx="15" ry="15"/>
+                  <ellipse cx="113" cy="95.5" rx="15" ry="15"/>
+                  <ellipse cx="102" cy="455.5" rx="15" ry="15"/>
+                  <ellipse cx="395" cy="387.5" rx="15" ry="15"/>
+                  <ellipse cx="826" cy="175.5" rx="15" ry="15"/>
+                  <ellipse cx="626" cy="286.5" rx="15" ry="15"/>
+                  <ellipse cx="887" cy="598.5" rx="15" ry="15"/>
+               </g>
+            </g>
+            <g fill="#FFD700" fill-opacity=".3" transform="translate(65 63)">
+               <g id="snow-top-layer">
+                  <circle cx="8" cy="776" r="20"/>
+                  <circle cx="189" cy="925" r="20"/>
+                  <circle cx="548" cy="844" r="20"/>
+                  <circle cx="685" cy="1115" r="20"/>
+                  <circle cx="858" cy="909" r="20"/>
+                  <circle cx="874" cy="1438" r="20" transform="rotate(180 874 1438)"/>
+                  <circle cx="657" cy="1256" r="20" transform="rotate(180 657 1256)"/>
+                  <circle cx="443" cy="1372" r="20" transform="rotate(180 443 1372)"/>
+                  <circle cx="339" cy="1107" r="20" transform="rotate(180 339 1107)"/>
+                  <circle cx="24" cy="1305" r="20" transform="rotate(180 24 1305)"/>
+                  <circle cx="8" cy="8" r="20"/>
+                  <circle cx="189" cy="157" r="20"/>
+                  <circle cx="548" cy="76" r="20"/>
+                  <circle cx="685" cy="347" r="20"/>
+                  <circle cx="858" cy="141" r="20"/>
+                  <circle cx="874" cy="670" r="20" transform="rotate(180 874 670)"/>
+                  <circle cx="657" cy="488" r="20" transform="rotate(180 657 488)"/>
+                  <circle cx="443" cy="604" r="20" transform="rotate(180 443 604)"/>
+                  <circle cx="339" cy="339" r="20" transform="rotate(180 339 339)"/>
+                  <circle cx="24" cy="537" r="20" transform="rotate(180 24 537)"/>
+               </g>
+            </g>
+        </svg>
+    </div> -->
     <header
       class="fixed top-0 left-0 w-full bg-bg-dark/90 backdrop-blur-md z-50 shadow-lg"
       style="box-shadow: 0px 0px 5px 0px #ffd700" >
       <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           
-          <a href="#" class="flex items-center">
-            <img src="assets/img/logo.png" alt="Logo" class="h-8 w-auto" />
+          <a href="#home" class="flex items-center">
+            <img src="assets/img/logo.png" alt="Logo" class="h-12 w-auto" />
           </a>
 
           
           <div class="hidden md:block">
-            <ul class="flex space-x-8">
+            <ul class="flex space-x-12 ">
               <li>
                 <a
                   href="#home"
@@ -178,10 +286,8 @@
                 >
                   <span class="block">Aline</span>
                   <span
-                    class="block text-main-gold bg-gradient-to-r from-main-gold to-yellow-300 bg-clip-text text-transparent"
-                  >
-                    Developer
-                  </span>
+                    class="inline-block text-3xl md:text-4xl lg:text-5xl text-main-gold bg-gradient-to-r from-main-gold to-yellow-300 bg-clip-text text-transparent typed-text"
+                  ></span>
                 </h1>
               </div>
 
@@ -205,7 +311,7 @@
                 </a>
                 <a
                   href="#contact"
-                  class="group inline-flex items-center justify-center border-2 border-main-gold text-main-gold hover:bg-bg-dark hover:text-bg-dark font-semibold py-4 px-8 rounded-full transition-all duration-300"
+                  class="group inline-flex items-center justify-center border-2 border-main-gold text-main-gold hover:bg-main-gold hover:text-bg-dark font-semibold py-4 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-main-gold/50 hover:-translate-y-1"
                 >
                   <span>Get In Touch</span>
                   <i
@@ -388,7 +494,8 @@
         
         <div class="flex flex-col sm:flex-row gap-4 pt-4">
           <a
-            href="#"
+            href="assets/resume.pdf"
+            download
             class="group inline-flex items-center justify-center bg-white text-main-gold hover:bg-main-gold hover:text-black font-semibold py-4 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             <span>Download Resume</span>
@@ -411,7 +518,7 @@
   </div>
 </section>
 
-    <section class="py-24 bg-bg-dark relative overflow-hidden" id="skills">
+    <section class="py-16 bg-bg-dark relative overflow-hidden" id="skills">
         
         <div
           class="absolute top-1/2 left-0 w-72 h-72 bg-main-gold opacity-5 rounded-full -translate-y-1/2 -translate-x-36"
@@ -435,20 +542,13 @@
             </p>
           </div>
 
-          <div class="grid lg:grid-cols-2 gap-16 items-center">
-            <div class="space-y-8">
-              <div>
-                <h3
-                  class="text-4xl md:text-5xl font-bold text-white mb-4 font-poppins"
-                >
-                  Professional <span class="text-main-gold">Skills</span>
-                </h3>
-                <p class="text-lg text-white font-poppins">
-                  I am proficient in the following technologies and tools:
-                </p>
-              </div>
+          <div class="grid lg:grid-cols-3 gap-8">
+            <div>
+              <h3 class="text-3xl font-bold text-white mb-6 font-poppins">
+                <span class="text-main-gold">Core Technologies</span>
+              </h3>
 
-              <div class="space-y-6">
+              <div class="space-y-3">
                 <div
                   class="group bg-bg-dark p-6 rounded-2xl shadow-xl border border-main-gold/20 hover:border-main-gold/40 transition-all duration-300 hover:shadow-2xl hover:shadow-main-gold/10"
                 >
@@ -540,6 +640,123 @@
                       <div
                         class="w-12 h-12 bg-main-gold/20 rounded-lg flex items-center justify-center group-hover:bg-main-gold/30 transition-colors"
                       >
+                        <i class="bx bxl-javascript text-2xl text-main-gold"></i>
+                      </div>
+                      <span
+                        class="text-xl font-semibold text-white font-poppins"
+                        >JavaScript</span
+                      >
+                    </div>
+                    <span class="text-lg font-bold text-main-gold">80%</span>
+                  </div>
+                  <div
+                    class="w-full bg-bg-dark rounded-full h-4 border border-main-gold/30 overflow-hidden"
+                  >
+                    <div
+                      class="bg-gradient-to-r from-main-gold to-yellow-300 h-4 rounded-full transition-all duration-1000 ease-out"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-3xl font-bold text-white mb-6 font-poppins">
+                <span class="text-main-gold">Frameworks</span>
+              </h3>
+              <div class="space-y-3">
+                <div
+                  class="group bg-bg-dark p-6 rounded-2xl shadow-xl border border-main-gold/20 hover:border-main-gold/40 transition-all duration-300 hover:shadow-2xl hover:shadow-main-gold/10"
+                >
+                  <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-4">
+                      <div
+                        class="w-12 h-12 bg-main-gold/20 rounded-lg flex items-center justify-center group-hover:bg-main-gold/30 transition-colors"
+                      >
+                        <i class="bx bxl-typescript text-2xl text-main-gold"></i>
+                      </div>
+                      <span
+                        class="text-xl font-semibold text-white font-poppins"
+                        >TypeScript</span
+                      >
+                    </div>
+                    <span class="text-lg font-bold text-main-gold">75%</span>
+                  </div>
+                  <div
+                    class="w-full bg-bg-dark rounded-full h-4 border border-main-gold/30 overflow-hidden"
+                  >
+                    <div
+                      class="bg-gradient-to-r from-main-gold to-yellow-300 h-4 rounded-full transition-all duration-1000 ease-out"
+                      style="width: 75%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div
+                  class="group bg-bg-dark p-6 rounded-2xl shadow-xl border border-main-gold/20 hover:border-main-gold/40 transition-all duration-300 hover:shadow-2xl hover:shadow-main-gold/10"
+                >
+                  <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-4">
+                      <div
+                        class="w-12 h-12 bg-main-gold/20 rounded-lg flex items-center justify-center group-hover:bg-main-gold/30 transition-colors"
+                      >
+                        <i class="bx bxl-react text-2xl text-main-gold"></i>
+                      </div>
+                      <span
+                        class="text-xl font-semibold text-white font-poppins"
+                        >React</span
+                      >
+                    </div>
+                    <span class="text-lg font-bold text-main-gold">85%</span>
+                  </div>
+                  <div
+                    class="w-full bg-bg-dark rounded-full h-4 border border-main-gold/30 overflow-hidden"
+                  >
+                    <div
+                      class="bg-gradient-to-r from-main-gold to-yellow-300 h-4 rounded-full transition-all duration-1000 ease-out"
+                      style="width: 85%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div
+                  class="group bg-bg-dark p-6 rounded-2xl shadow-xl border border-main-gold/20 hover:border-main-gold/40 transition-all duration-300 hover:shadow-2xl hover:shadow-main-gold/10"
+                >
+                  <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-4">
+                      <div
+                        class="w-12 h-12 bg-main-gold/20 rounded-lg flex items-center justify-center group-hover:bg-main-gold/30 transition-colors"
+                      >
+                        <i class="bx bx-code-block text-2xl text-main-gold"></i>
+                      </div>
+                      <span
+                        class="text-xl font-semibold text-white font-poppins"
+                        >Next.js</span
+                      >
+                    </div>
+                    <span class="text-lg font-bold text-main-gold">80%</span>
+                  </div>
+                  <div
+                    class="w-full bg-bg-dark rounded-full h-4 border border-main-gold/30 overflow-hidden"
+                  >
+                    <div
+                      class="bg-gradient-to-r from-main-gold to-yellow-300 h-4 rounded-full transition-all duration-1000 ease-out"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div
+                  class="group bg-bg-dark p-6 rounded-2xl shadow-xl border border-main-gold/20 hover:border-main-gold/40 transition-all duration-300 hover:shadow-2xl hover:shadow-main-gold/10"
+                >
+                  <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-4">
+                      <div
+                        class="w-12 h-12 bg-main-gold/20 rounded-lg flex items-center justify-center group-hover:bg-main-gold/30 transition-colors"
+                      >
                         <i class="bx bxs-paint text-2xl text-main-gold"></i>
                       </div>
                       <span
@@ -558,10 +775,125 @@
                     ></div>
                   </div>
                 </div>
+
               </div>
             </div>
 
-            <div class="flex justify-center lg:justify-end relative">
+            <div>
+              <h3 class="text-3xl font-bold text-white mb-6 font-poppins">
+                <span class="text-main-gold">Backend & Tools</span>
+              </h3>
+              <div class="space-y-3">
+                <div
+                  class="group bg-bg-dark p-6 rounded-2xl shadow-xl border border-main-gold/20 hover:border-main-gold/40 transition-all duration-300 hover:shadow-2xl hover:shadow-main-gold/10"
+                >
+                  <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-4">
+                      <div
+                        class="w-12 h-12 bg-main-gold/20 rounded-lg flex items-center justify-center group-hover:bg-main-gold/30 transition-colors"
+                      >
+                        <i class="bx bxl-firebase text-2xl text-main-gold"></i>
+                      </div>
+                      <span
+                        class="text-xl font-semibold text-white font-poppins"
+                        >Firebase</span
+                      >
+                    </div>
+                    <span class="text-lg font-bold text-main-gold">70%</span>
+                  </div>
+                  <div
+                    class="w-full bg-bg-dark rounded-full h-4 border border-main-gold/30 overflow-hidden"
+                  >
+                    <div
+                      class="bg-gradient-to-r from-main-gold to-yellow-300 h-4 rounded-full transition-all duration-1000 ease-out"
+                      style="width: 70%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div
+                  class="group bg-bg-dark p-6 rounded-2xl shadow-xl border border-main-gold/20 hover:border-main-gold/40 transition-all duration-300 hover:shadow-2xl hover:shadow-main-gold/10"
+                >
+                  <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-4">
+                      <div
+                        class="w-12 h-12 bg-main-gold/20 rounded-lg flex items-center justify-center group-hover:bg-main-gold/30 transition-colors"
+                      >
+                        <i class="bx bxl-java text-2xl text-main-gold"></i>
+                      </div>
+                      <span
+                        class="text-xl font-semibold text-white font-poppins"
+                        >Java</span
+                      >
+                    </div>
+                    <span class="text-lg font-bold text-main-gold">65%</span>
+                  </div>
+                  <div
+                    class="w-full bg-bg-dark rounded-full h-4 border border-main-gold/30 overflow-hidden"
+                  >
+                    <div
+                      class="bg-gradient-to-r from-main-gold to-yellow-300 h-4 rounded-full transition-all duration-1000 ease-out"
+                      style="width: 65%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div
+                  class="group bg-bg-dark p-6 rounded-2xl shadow-xl border border-main-gold/20 hover:border-main-gold/40 transition-all duration-300 hover:shadow-2xl hover:shadow-main-gold/10"
+                >
+                  <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-4">
+                      <div
+                        class="w-12 h-12 bg-main-gold/20 rounded-lg flex items-center justify-center group-hover:bg-main-gold/30 transition-colors"
+                      >
+                        <i class="bx bx-data text-2xl text-main-gold"></i>
+                      </div>
+                      <span
+                        class="text-xl font-semibold text-white font-poppins"
+                        >PostgreSQL</span
+                      >
+                    </div>
+                    <span class="text-lg font-bold text-main-gold">60%</span>
+                  </div>
+                  <div
+                    class="w-full bg-bg-dark rounded-full h-4 border border-main-gold/30 overflow-hidden"
+                  >
+                    <div
+                      class="bg-gradient-to-r from-main-gold to-yellow-300 h-4 rounded-full transition-all duration-1000 ease-out"
+                      style="width: 60%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div
+                  class="group bg-bg-dark p-6 rounded-2xl shadow-xl border border-main-gold/20 hover:border-main-gold/40 transition-all duration-300 hover:shadow-2xl hover:shadow-main-gold/10"
+                >
+                  <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-4">
+                      <div
+                        class="w-12 h-12 bg-main-gold/20 rounded-lg flex items-center justify-center group-hover:bg-main-gold/30 transition-colors"
+                      >
+                        <i class="bx bxl-git text-2xl text-main-gold"></i>
+                      </div>
+                      <span
+                        class="text-xl font-semibold text-white font-poppins"
+                        >Git & GitHub</span
+                      >
+                    </div>
+                    <span class="text-lg font-bold text-main-gold">90%</span>
+                  </div>
+                  <div
+                    class="w-full bg-bg-dark rounded-full h-4 border border-main-gold/30 overflow-hidden"
+                  >
+                    <div
+                      class="bg-gradient-to-r from-main-gold to-yellow-300 h-4 rounded-full transition-all duration-1000 ease-out"
+                      style="width: 90%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="flex justify-center lg:justify-end relative">
               <div class="relative group">
                 <div
                   class="absolute -inset-4 bg-gradient-to-r from-main-gold to-yellow-300 rounded-2xl opacity-20 group-hover:opacity-30 blur-xl transition-all duration-300"
@@ -572,7 +904,7 @@
                   class="relative w-full max-w-lg h-auto rounded-2xl shadow-2xl group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -603,12 +935,13 @@
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <a
-              href=""
+              href="https://e-commerce-project-five-opal.vercel.app"
+              target="_blank"
               class="group block overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-main-gold/20 transition-all duration-500 border border-main-gold/20 hover:border-main-gold/40 bg-bg-dark"
             >
               <div class="relative overflow-hidden">
                 <img
-                  src="assets/img/Work1.png"
+                  src="assets/img/e-commerce.avif"
                   alt="work1"
                   class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -618,19 +951,20 @@
                 <div
                   class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
                 >
-                  <h3 class="text-lg font-semibold mb-1">Project Title</h3>
+                  <h3 class="text-lg font-semibold mb-1">E-Commerce Platform</h3>
                   <p class="text-sm text-white">Web Development</p>
                 </div>
               </div>
             </a>
 
             <a
-              href=""
+              href="https://task-mgt-app-gdn8.vercel.app"
+              target="_blank"
               class="group block overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-main-gold/20 transition-all duration-500 border border-main-gold/20 hover:border-main-gold/40 bg-bg-dark"
             >
               <div class="relative overflow-hidden">
                 <img
-                  src="assets/img/work2.png"
+                  src="assets/img/task.webp"
                   alt="work2"
                   class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -640,14 +974,15 @@
                 <div
                   class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
                 >
-                  <h3 class="text-lg font-semibold mb-1">Project Title</h3>
+                  <h3 class="text-lg font-semibold mb-1">Task Management App</h3>
                   <p class="text-sm text-white">UI/UX Design</p>
                 </div>
               </div>
             </a>
 
             <a
-              href=""
+              href="https://freelance-dashboard-puce.vercel.app"
+              target="_blank"
               class="group block overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-main-gold/20 transition-all duration-500 border border-main-gold/20 hover:border-main-gold/40 bg-bg-dark"
             >
               <div class="relative overflow-hidden">
@@ -662,19 +997,20 @@
                 <div
                   class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
                 >
-                  <h3 class="text-lg font-semibold mb-1">Project Title</h3>
+                  <h3 class="text-lg font-semibold mb-1">Freelance Dashboard</h3>
                   <p class="text-sm text-white">Frontend Development</p>
                 </div>
               </div>
             </a>
 
             <a
-              href=""
+              href="https://phase-two-capstone-project-cb6r.vercel.app/"
+              target="_blank"
               class="group block overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-main-gold/20 transition-all duration-500 border border-main-gold/20 hover:border-main-gold/40 bg-bg-dark"
             >
               <div class="relative overflow-hidden">
                 <img
-                  src="assets/img/work4.png"
+                  src="assets/img/publishing.PNG"
                   alt="work4"
                   class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -684,19 +1020,20 @@
                 <div
                   class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
                 >
-                  <h3 class="text-lg font-semibold mb-1">Project Title</h3>
-                  <p class="text-sm text-white">Mobile App</p>
+                  <h3 class="text-lg font-semibold mb-1">Publishing Platform</h3>
+                  <p class="text-sm text-white">Web Development</p>
                 </div>
               </div>
             </a>
 
             <a
-              href=""
+              href="https://react-movie-explorer-six.vercel.app"
+              target="_blank"
               class="group block overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-main-gold/20 transition-all duration-500 border border-main-gold/20 hover:border-main-gold/40 bg-bg-dark"
             >
               <div class="relative overflow-hidden">
                 <img
-                  src="assets/img/work5.png"
+                  src="assets/img/movie-explorer.avif"
                   alt="work5"
                   class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -706,19 +1043,20 @@
                 <div
                   class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
                 >
-                  <h3 class="text-lg font-semibold mb-1">Project Title</h3>
-                  <p class="text-sm text-white">E-commerce</p>
+                  <h3 class="text-lg font-semibold mb-1">Movie Explorer</h3>
+                  <p class="text-sm text-white">Entertainment</p>
                 </div>
               </div>
             </a>
 
             <a
-              href=""
+              href="https://dev-dashboard-one.vercel.app"
+              target="_blank"
               class="group block overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-main-gold/20 transition-all duration-500 border border-main-gold/20 hover:border-main-gold/40 bg-bg-dark"
             >
               <div class="relative overflow-hidden">
                 <img
-                  src="assets/img/work6.png"
+                  src="assets/img/developer.avif"
                   alt="work6"
                   class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -728,8 +1066,8 @@
                 <div
                   class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
                 >
-                  <h3 class="text-lg font-semibold mb-1">Project Title</h3>
-                  <p class="text-sm text-white">Portfolio Design</p>
+                  <h3 class="text-lg font-semibold mb-1">Developer Dashboard</h3>
+                  <p class="text-sm text-white">Frontend Development</p>
                 </div>
               </div>
             </a>
@@ -737,7 +1075,7 @@
 
           <div class="text-center mt-16">
             <a
-              href="#contact"
+              href="projects.html"
               class="group inline-flex items-center justify-center bg-main-gold hover:bg-yellow-500 text-bg-dark font-semibold py-4 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-main-gold/50 hover:-translate-y-1"
             >
               <span>View All Projects</span>
@@ -779,7 +1117,7 @@
                   type="text"
                   name="name"
                   placeholder="Your Name"
-                  class="w-full px-4 py-3 bg-bg-dark border border-main-gold/30 rounded-lg focus:ring-2 focus:ring-main-gold focus:border-main-gold outline-none transition-colors duration-200 text-white placeholder-gray-400"
+                  class="w-full px-4 py-3 bg-bg-dark border border-main-gold/30 rounded-lg focus:ring-2 focus:ring-main-gold focus:border-main-gold outline-none transition-colors duration-200 text-gray placeholder-gray-400"
                   required
                 />
               </div>
@@ -789,7 +1127,7 @@
                   type="email"
                   name="email"
                   placeholder="Your Email"
-                  class="w-full px-4 py-3 bg-bg-dark border border-main-gold/30 rounded-lg focus:ring-2 focus:ring-main-gold focus:border-main-gold outline-none transition-colors duration-200 text-white placeholder-gray-400"
+                  class="w-full px-4 py-3 bg-bg-dark border border-main-gold/30 rounded-lg focus:ring-2 focus:ring-main-gold focus:border-main-gold outline-none transition-colors duration-200 text-gray placeholder-gray-400"
                   required
                 />
               </div>
@@ -847,6 +1185,25 @@
         </div>
       </div>
     </footer>
+
     </main>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== TYPED JS =====-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="js/main.js"></script>
 </body>
 </html>
+
+    <style>
+      #skills .group {
+        padding: 1rem !important;
+      }
+      #skills .group > div:first-child {
+        margin-bottom: 0.5rem !important;
+      }
+    </style>
