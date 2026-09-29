@@ -21,12 +21,19 @@
 
 
 ---
-## Deployment
-deployed link
-[
-    https://ualine055.github.io/ALine-s-portofolio/
-    
-]
+## 🚀 Live site
+[a-line-s-portofolio-l65z.vercel.app](https://a-line-s-portofolio-l65z.vercel.app/)
+
+## ✨ Features
+- Animated hero with a typing effect and floating profile picture
+- About, Skills, Experience & Education sections
+- Projects page with technology filters, live demo and source code links
+- Working contact form (Web3Forms) with sending, success and error states
+- Downloadable resume
+- Link previews for LinkedIn, WhatsApp and X, plus a custom browser icon
+- Custom 404 page and a back-to-top button
+- Fully responsive, from phones to large screens
+
 ## Tech stack
 - [Next.js](https://nextjs.org) (App Router) + React
 - TypeScript
@@ -51,6 +58,6 @@ Other scripts:
 src/
   app/          pages (home and /projects)
   components/   page sections (Navbar, Hero, About, Skills, Work, Contact, Footer)
-  data/         projects list, edit projects.ts to add or update a project
+  data/         content: projects.ts (projects) and experience.ts (experience & education)
 public/assets/  images and resume
 ```
