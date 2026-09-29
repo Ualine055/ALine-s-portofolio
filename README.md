@@ -27,8 +27,30 @@ deployed link
     https://ualine055.github.io/ALine-s-portofolio/
     
 ]
-## how to run locally
-clone the repository:
-[
+## Tech stack
+- [Next.js](https://nextjs.org) (App Router) + React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+
+## How to run locally
+```bash
 git clone https://github.com/Ualine055/ALine-s-portofolio.git
-]
+cd ALine-s-portofolio
+npm install
+npm run dev
+```
+Then open http://localhost:3000.
+
+Other scripts:
+- `npm run build` – production build
+- `npm run lint` – lint the code
+
+## Project structure
+```
+src/
+  app/          pages (home and /projects)
+  components/   page sections (Navbar, Hero, About, Skills, Work, Contact, Footer)
+  data/         projects list, edit projects.ts to add or update a project
+public/assets/  images and resume
+```
