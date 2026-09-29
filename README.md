@@ -22,7 +22,7 @@
 
 ---
 ## 🚀 Live site
-[a-line-s-portofolio-l65z.vercel.app](https://a-line-s-portofolio-l65z.vercel.app/)
+[a-line-s-portofolio-l65z.vercel.app](https://a-line-s-portofolio.vercel.app/)
 
 ## ✨ Features
 - Animated hero with a typing effect and floating profile picture
