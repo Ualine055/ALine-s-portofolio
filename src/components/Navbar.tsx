@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const links = ["home", "about", "skills", "work", "contact"];
+const links = ["home", "about", "skills", "experience", "work", "contact"];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -47,7 +47,7 @@ export default function Navbar() {
           </Link>
 
           <div className="hidden md:block">
-            <ul className="flex space-x-12">
+            <ul className="flex space-x-8 lg:space-x-12">
               {links.map((link) => (
                 <li key={link}>
                   <Link
