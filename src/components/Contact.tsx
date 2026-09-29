@@ -38,7 +38,7 @@ export default function Contact() {
 
         <div className="rounded-2xl shadow-xl p-8 md:p-12 border border-[#FFD700]/20">
           <form onSubmit={handleSubmit} className="space-y-6">
-            <input type="hidden" name="access_key" value="aa26a5da-6596-4088-a5ff-55db314c541b" />
+            <input type="hidden" name="access_key" value="8ce675ab-66e2-4e60-b1e2-2b9c193bab41" />
             <input type="hidden" name="subject" value="New message from your portfolio" />
             {/* Hidden spam trap: real visitors never fill this in */}
             <input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} autoComplete="off" />
